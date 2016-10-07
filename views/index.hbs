@@ -7,6 +7,9 @@
     |
     <a href="/logout">Logout</a>
   <p>
+    {{#if profile}}
+      <img src="{{profile.pictureUrl}}">
+    {{/if}}
 {{else}}
   <p>
     <a href="/auth/linkedin">Login</a>
